@@ -76,7 +76,7 @@ public class SlotPanel extends JPanel {
 		gridBagConstraints2.insets = new Insets(0, 0, 0, 5);
 		gridBagConstraints2.gridy = 0;
 		jLabelUser = new JLabel();
-		jLabelUser.setText("Usu·rio:");
+		jLabelUser.setText("Usu√°rio:");
 		GridBagConstraints gridBagConstraints1 = new GridBagConstraints();
 		gridBagConstraints1.fill = GridBagConstraints.VERTICAL;
 		gridBagConstraints1.gridy = 0;
@@ -90,7 +90,7 @@ public class SlotPanel extends JPanel {
 		gridBagConstraints.anchor = GridBagConstraints.EAST;
 		gridBagConstraints.gridy = 0;
 		jLabelTitulo = new JLabel();
-		jLabelTitulo.setText("TÌtulo:");
+		jLabelTitulo.setText("T√≠tulo:");
 		this.setSize(800, 300);
 		this.setLayout(new GridBagLayout());
 		this.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(EtchedBorder.RAISED), titleSlot, TitledBorder.DEFAULT_JUSTIFICATION, TitledBorder.DEFAULT_POSITION, new Font("Arial Narrow", Font.BOLD, 12), Color.orange));

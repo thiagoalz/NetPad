@@ -77,14 +77,14 @@ public class NovoDocumentoDialog extends JDialog {
 			gridBagConstraints1.insets = new Insets(10, 10, 5, 0);
 			gridBagConstraints1.anchor = GridBagConstraints.WEST;
 			jLabelTituloSecao = new JLabel();
-			jLabelTituloSecao.setText("Título da Seção:");
+			jLabelTituloSecao.setText("TÃ­tulo da SeÃ§Ã£o:");
 			GridBagConstraints gridBagConstraints7 = new GridBagConstraints();
 			gridBagConstraints7.gridx = 0;
 			gridBagConstraints7.insets = new Insets(5, 10, 5, 0);
 			gridBagConstraints7.anchor = GridBagConstraints.WEST;
 			gridBagConstraints7.gridy = 2;
 			jLabelQtdSecoes = new JLabel();
-			jLabelQtdSecoes.setText("Quantidade de seções:");
+			jLabelQtdSecoes.setText("Quantidade de seÃ§Ãµes:");
 			GridBagConstraints gridBagConstraints6 = new GridBagConstraints();
 			gridBagConstraints6.fill = GridBagConstraints.VERTICAL;
 			gridBagConstraints6.gridy = 2;

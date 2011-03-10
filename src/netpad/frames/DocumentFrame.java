@@ -76,7 +76,7 @@ public class DocumentFrame extends JFrame {
 		this.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 		this.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
 		this.setContentPane(getJScrollPane());
-		this.setTitle("Documento - "+documento.getNome()+" // Usu·rio: "+documento.getUsuarioLocal().getNickname());
+		this.setTitle("Documento - "+documento.getNome()+" // Usu√°rio: "+documento.getUsuarioLocal().getNickname());
 		placeSlotPanels();
 		
 		this.addWindowListener(new java.awt.event.WindowAdapter() {

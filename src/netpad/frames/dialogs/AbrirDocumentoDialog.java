@@ -74,7 +74,7 @@ public class AbrirDocumentoDialog extends JDialog {
 			gridBagConstraints22.anchor = GridBagConstraints.WEST;
 			gridBagConstraints22.gridy = 2;
 			jLabelTituloSecao = new JLabel();
-			jLabelTituloSecao.setText("Título da Seção:");
+			jLabelTituloSecao.setText("TÃ­tulo da SeÃ§Ã£o:");
 			GridBagConstraints gridBagConstraints21 = new GridBagConstraints();
 			gridBagConstraints21.gridx = 0;
 			gridBagConstraints21.insets = new Insets(10, 10, 5, 0);
@@ -139,7 +139,7 @@ public class AbrirDocumentoDialog extends JDialog {
 						AbrirDocumentoDialog.this.dispose();
 					} catch (TimeoutException e1) {
 						//df = null;
-						JOptionPane.showMessageDialog(AbrirDocumentoDialog.this, "Não foi possível abrir o documento especificado.\n Verifique a existência do mesmo ou tente mais tarde.");
+						JOptionPane.showMessageDialog(AbrirDocumentoDialog.this, "NÃ£o foi possÃ­vel abrir o documento especificado.\n Verifique a existÃªncia do mesmo ou tente mais tarde.");
 					}
 				}
 			});

@@ -40,7 +40,7 @@ public class MainFrame extends JFrame {
 	}
 
 	/**
-	 * MÈtodo para levantar os serviÁos do OpenORB de mapa de nomes e f·brica de
+	 * M√©todo para levantar os servi√ßos do OpenORB de mapa de nomes e f√°brica de
 	 * canais de eventos
 	 * 
 	 */
@@ -189,7 +189,7 @@ public class MainFrame extends JFrame {
 	private JMenu getJMenuUsuario() {
 		if (jMenuUsuario == null) {
 			jMenuUsuario = new JMenu();
-			jMenuUsuario.setText("Usu·rio");
+			jMenuUsuario.setText("Usu√°rio");
 			jMenuUsuario.add(getJMenuUsuarioItemNovo());
 		}
 		return jMenuUsuario;
@@ -211,8 +211,8 @@ public class MainFrame extends JFrame {
 							String usuario = (String) JOptionPane
 									.showInputDialog(
 											MainFrame.this,
-											"Digite o nickname do novo usu·rio:",
-											"Novo usu·rio",
+											"Digite o nickname do novo usu√°rio:",
+											"Novo usu√°rio",
 											JOptionPane.INFORMATION_MESSAGE);
 							if (usuario != null) {
 								if (usuario.equals("")) {
