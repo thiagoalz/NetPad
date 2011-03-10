@@ -1,0 +1,54 @@
+Vejam os passos necessarios para deixar tudo funcionando no OpenORB:
+
+1) Baixe de http://openorb.sourceforge.net/ os pacotes OpenORB-1.3.1 e
+EventService-1.3.0 e descompacte
+estes arquivos no mesmo diretorio, por exemplo c:\ OpenORB\. Serao
+criados os diretorios OpenORB -1.3.1 e EventService-1.3.0. Coloque no
+CLASSPATH TODOS os jar's contidos nos diretorios lib dos pacotes acima.
+
+OBS: devem ser colocados no CLASSPATH TODOS os jar's, um por um, NAO
+PODE COLOCAR O DIRETORIO RAIZ ONDE OS JAR's SE ENCONTRAM. CUIDADO PARA
+NAO COLOCAR O NOME INCORRETO DO JAR. COPIEM E COLEM.
+
+2) Copie o arquivo orb.properties, que esta no diretorio
+c:\OpenORB\ OpenORB-1.3.1\config\ para a pasta jre\lib da sua
+instalacao do java. Se o java esta instalado no diretorio
+c:\j2sdk1.4.2_02, entao copie o orb.properties para o diretorio
+c:\j2sdk1.4.2_02\jre\lib.
+
+OBS: verifiquem se a maquina nao possui MAIS DE UMA instalacao do
+Java. Se existir verifiquem qual aparece primeiro no PATH. Usem 'java
+-version' para verificar qual a versao.
+
+3) Inicie o servidor de nomes atraves do comando:
+java org.openorb.util.MapNamingContext -ORBPort=2001
+
+4) Inicie o servidor que cria o EventChannelFactory:
+java org. openorb.event.Server
+
+5) Executando os exemplos do canal de eventos. No pacote do canal de
+eventos os exemplos nao estao compilados. Para compilar basta ir no
+diretorio c:\ OpenORB\EventService-1.3.0\examples\src e dar o comando:
+
+javac org/openorb/event/examples/*.java
+
+depois recria-se o jar dos exemplos:
+
+jar -cvf ..\..\lib\openorb_event _examples-1.3.0.jar
+org/openorb/event/examples/*.class
+
+6) Inicia-se um consumidor push:
+java org. openorb.event.examples.PushClient
+
+7) Depois inicia-se o produtor push:
+java org.openorb .event.examples.PushServer
+
+E as mensagens sao trocadas.
+
+Por favor, todos devem fazer isso o quanto antes para não termos
+atrasos no trabalho prática. Deixar o ambiente funcionando é a
+primeira parte do nosso trabalho.
+
+Abraços,
+
+Sandro
